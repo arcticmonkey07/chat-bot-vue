@@ -83,7 +83,7 @@ export default {
       // this.delay(1500).then(() => (this.dots = "..."));
     },
   },
-  created() {
+  mounted() {
     new Promise((resolve) => {
       setTimeout(() => {
         resolve(this.allMessages.push({ text: "Добро пожаловать в чатбот!" }));
@@ -161,6 +161,7 @@ body {
 }
 
 .typing {
+  margin-left: auto;
   font-size: 20px;
 }
 
